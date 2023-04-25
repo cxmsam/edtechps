@@ -1,0 +1,31 @@
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.hotspot-image {
+  width: 100%;
+  height: auto;
+}
+
+.hotspot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(255, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.hotspot:hover,
+.hotspot:active {
+  opacity: 1;
+}
+
+/* Update the top and left values to position the hotspots on your image */
+#hotspot1 { top: 10%; left: 10%; }
+#hotspot2 { top: 30%; left: 50%; }
+#hotspot3 { top: 50%; left: 70%; }
+#hotspot4 { top: 70%; left: 20%; }
+#hotspot5 { top: 90%; left: 90%; }
